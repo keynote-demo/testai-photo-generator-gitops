@@ -1,0 +1,15 @@
+app:
+  name: testai-photo-generator-app
+  namespace: testai
+  cluster: .apps.keynote.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/keynote-demo/testai-photo-generator
+  org: keynote-demo
+  name: testai-photo-generator
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: testai/photo-generator-app
+  tag: latest
